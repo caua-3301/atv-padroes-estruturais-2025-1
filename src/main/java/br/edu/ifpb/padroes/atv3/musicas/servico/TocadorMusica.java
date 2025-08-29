@@ -1,14 +1,9 @@
 package br.edu.ifpb.padroes.atv3.musicas.servico;
 
-import br.edu.ifpb.padroes.atv3.musicas.abcd.Musica;
+import br.edu.ifpb.padroes.atv3.musicas.model.Item;
 
-public class TocadorMusica {
+// Interface que visa abstrair os serviços de reproduzir música
+public interface TocadorMusica {
 
-    public void tocarMusica(Musica musica) {
-        if (musica == null)
-            throw new MusicaNaoEncontradaException();
-
-        System.out.println("Tocando musica: " + musica.titulo());
-    }
-
+    public void tocarMusica(Item item);
 }

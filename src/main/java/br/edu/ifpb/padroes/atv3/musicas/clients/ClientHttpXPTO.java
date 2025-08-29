@@ -1,6 +1,9 @@
-package br.edu.ifpb.padroes.atv3.musicas.xpto;
+package br.edu.ifpb.padroes.atv3.musicas.clients;
 
-import br.edu.ifpb.padroes.atv3.musicas.abcd.Musica;
+import br.edu.ifpb.padroes.atv3.musicas.model.Item;
+import br.edu.ifpb.padroes.atv3.musicas.model.Musica;
+import br.edu.ifpb.padroes.atv3.musicas.model.Song;
+import br.edu.ifpb.padroes.atv3.musicas.proxy.ClientHttp;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
@@ -11,7 +14,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.List;
 
-public class ClientHttpXPTO {
+public class ClientHttpXPTO implements ClientHttp {
 
     public static final String SERVICE_URI = "http://localhost:4000/musics";
 
@@ -29,4 +32,18 @@ public class ClientHttpXPTO {
         }
     }
 
+    @Override
+    public List<Item> getItens() {
+        return null;
+    }
+
+    @Override
+    public Item getByTitle(String title) {
+        return null;
+    }
+
+    @Override
+    public String getType() {
+        return null;
+    }
 }
