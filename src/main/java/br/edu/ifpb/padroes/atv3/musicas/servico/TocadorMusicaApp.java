@@ -12,8 +12,8 @@ public class TocadorMusicaApp {
         this.tocadorMusica = tocadorMusica;
     }
 
-    public void tocarMusica(Item item) {
-        tocadorMusica.tocarMusica(item);
+    public void tocarMusica(String name) {
+        tocadorMusica.tocarMusica(name);
     }
 
 }

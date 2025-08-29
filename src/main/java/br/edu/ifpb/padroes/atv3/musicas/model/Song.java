@@ -7,9 +7,9 @@ public record Song(String id, String title, String artist, Long year, String gen
                 Id: %s
                 Título: %s
                 Artista: %s
-                Ano: %.f
+                Ano: %s
                 Gênero: %s
-                """.formatted(id, title, artist, year, genre);
+                """.formatted(title, artist, year, genre);
 
         return content;
     }

@@ -31,9 +31,11 @@ public class ClientHttpProxy implements ClientHttp {
     public Item getByTitle(String title) {
         List<Item> itens = this.getItens();
 
-        return itens.stream()
+        Item itemSelected = itens.stream()
                 .filter(item -> item.getItemName().contains(title))
                 .collect(Collectors.toCollection(ArrayList::new)).get(0);
+
+        return itemSelected;
     }
 
     @Override

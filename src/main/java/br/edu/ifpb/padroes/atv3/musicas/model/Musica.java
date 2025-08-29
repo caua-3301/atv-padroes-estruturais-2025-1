@@ -4,12 +4,11 @@ public record Musica(String id, String titulo, String artista, Long ano, String 
     @Override
     public String getInfo() {
         String content = """
-                Id: %s
                 Título: %s
                 Artista: %s
-                Ano: %.f
+                Ano: %s
                 Gênero: %s
-                """.formatted(id, titulo, artista, ano, genero);
+                """.formatted(titulo, artista, ano, genero);
 
         return content;
     }

@@ -44,6 +44,6 @@ public class ClientHttpXPTO implements ClientHttp {
 
     @Override
     public String getType() {
-        return null;
+        return "XPTO";
     }
 }

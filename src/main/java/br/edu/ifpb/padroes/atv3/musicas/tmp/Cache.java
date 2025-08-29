@@ -12,6 +12,12 @@ public class Cache {
 
     private static Map<String, List<Item>> itens = new HashMap<>();
 
+    private static int songsListener = 0;
+
+    public static void countSong() {
+        songsListener += 1;
+    }
+
     public static List<Item> getItens(String key) {
         return itens.get(key);
     }

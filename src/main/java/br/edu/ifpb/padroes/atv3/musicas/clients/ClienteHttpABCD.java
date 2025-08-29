@@ -43,6 +43,6 @@ public class ClienteHttpABCD implements ClientHttp {
 
     @Override
     public String getType() {
-        return null;
+        return "ABCD";
     }
 }
